@@ -20,6 +20,7 @@
       --red-100: #fee2e2;
       --red-200: #fecaca;
       --red-500: #ef4444;
+      --red-600: #dc2626;
       --red-700: #b91c1c;
       --red-900: #7f1d1d;
       --emerald-50: #ecfdf5;
@@ -613,13 +614,33 @@
       border-radius: 50%;
       cursor: pointer;
       transition: 0.2s;
+      border: 2px solid white;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.2s;
+      border: 2px solid white;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     }
 
     #left-angle-slider::-webkit-slider-thumb {
       background: var(--blue-600);
     }
 
+    #left-angle-slider::-moz-range-thumb {
+      background: var(--blue-600);
+    }
+
     #right-angle-slider::-webkit-slider-thumb {
+      background: var(--red-600);
+    }
+
+    #right-angle-slider::-moz-range-thumb {
       background: var(--red-600);
     }
 
